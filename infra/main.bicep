@@ -285,7 +285,7 @@ module containerApps 'core/host/container-apps.bicep' = {
   params: {
     name: 'app'
     location: location
-    containerAppsEnvironmentName: '${prefix}-containerapps-env'
+    containerAppsEnvironmentName: '${prefix}containerapps'
     containerRegistryName: '${replace(prefix, '-', '')}registry'
     logAnalyticsWorkspaceName: monitoring.outputs.logAnalyticsWorkspaceName
   }
