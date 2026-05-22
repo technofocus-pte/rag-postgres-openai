@@ -222,7 +222,7 @@ var tags = {
 //var tags = { 'azd-env-name': name }
 
 resource resourceGroup 'Microsoft.Resources/resourceGroups@2021-04-01' = {
-  name: '${name}-rg'
+  name: 'ResourceGroup1'
   location: location
   tags: tags
 }
