@@ -211,7 +211,7 @@ var principalType = empty(runningOnGh) ? 'User' : 'ServicePrincipal'
 param labInstanceId string
 
 var resourceToken = toLower(uniqueString(subscription().id, labInstanceId))
-var prefix = resourceToken
+var prefix = labInstanceId
 var tags = {
   'azd-env-name': name
   'lab-instance-id': labInstanceId
